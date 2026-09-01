@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(utilRoutes);
 
 app.use((req, res) => {
-    res.status(404).json({ message: 'Rota não encontrada' });
+    res.status(404).json({ message: 'Route not found' });
 });
 
 app.use((err, req, res, next) => {
