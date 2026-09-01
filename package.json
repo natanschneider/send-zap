@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "axios": "^1.20.0",
+    "baileys": "^6.7.24",
+    "body-parser": "^2.3.0",
+    "express": "^5.2.1",
+    "multer": "^2.3.0",
+    "qrcode": "^1.5.4",
+    "winston": "^3.19.0",
+    "winston-daily-rotate-file": "^5.0.0",
+    "zod": "^4.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
