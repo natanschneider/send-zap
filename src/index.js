@@ -1,5 +1,6 @@
 import express from 'express';
 import utilRoutes from './routes/util.js';
+import messageRoutes from './routes/messages.js';
 import bodyParser from 'body-parser';
 import logger from './utils/logging.js';
 import safeJsonResponse from './utils/safeJsonResponse.js';
@@ -11,6 +12,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(utilRoutes);
+app.use(messageRoutes);
 
 app.use((req, res) => {
     res.status(404).json({ message: 'Route not found' });
